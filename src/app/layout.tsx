@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Headet";
-import Head from "next/head"
 import ThemeWrapper from "@/components/ThemeWraper";
 
 export const metadata: Metadata = {
@@ -16,9 +15,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet"/>
-      </Head>
       <ThemeWrapper>
         <Header />
         {children}
