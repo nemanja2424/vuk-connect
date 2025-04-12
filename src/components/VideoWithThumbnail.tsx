@@ -28,7 +28,7 @@ const VideoWithThumbnail = () => {
         <video 
           controls
           autoPlay
-          style={{ borderRadius: '20px', maxWidth: '897px', maxHeight:'505px' }}
+          style={{ borderRadius: '20px', width: '897px', height:'505px' }}
         >
             <source src="/videos/video.webm" type="video/webm" />
             Your browser does not support the video tag.
