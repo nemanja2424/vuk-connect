@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Button2 from "./Button2";
+import VideoWithThumbnail from "./VideoWithThumbnail";
 import Link from "next/link";
 
 const Hero = () => {
@@ -25,7 +26,9 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-
+            <div>
+                <VideoWithThumbnail />
+            </div>
         </div>
     </div>
   );
