@@ -10,9 +10,9 @@ const VideoWithThumbnail = () => {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: 'auto' }}>
+    <div style={{ position: 'relative', width: '100%', height: '100%', display:'flex', justifyContent:'center', alignItems:'center', marginTop:'60px' }}>
       {!isPlaying ? (
-        <div style={{ position: 'relative', width: '100%' }}>
+        <div style={{ position: 'relative', width: '100%', display:'flex', justifyContent:'center', alignItems:'center' }}>
           <Image 
             className='video'
             src={"/images/Thumbnail.jpg"}
@@ -29,6 +29,7 @@ const VideoWithThumbnail = () => {
           controls
           autoPlay
           className='video'
+          style={{ width:'98%', minWidth:'200px' }}
         >
             <source src="/videos/video.webm" type="video/webm" />
             Your browser does not support the video tag.

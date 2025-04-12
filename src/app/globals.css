@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 *{
   font-family: 'Montserrat', sans-serif;
   user-select: none;
@@ -52,8 +55,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 4%;
-  padding-top: 10px;
+  padding: 10px 4%;
   width: 92%;
   position: relative;
   z-index: 1000;
@@ -103,6 +105,7 @@ nav a:hover::after {
   top: 0;
   left: 0;
   height: calc(100vh - 60px);
+  width: 100%;
   z-index: 0;
   overflow: hidden;
   background-color: #ffffff33;
@@ -160,6 +163,103 @@ nav a:hover::after {
   transform: rotate(353deg) scale(1);
 }
 
+
+.info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 60px;
+}
+.kolona{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 45%;
+  min-width: 350px;
+  margin-bottom: 50px;
+}
+.stavka{
+  margin-top: 20px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.stavka p{
+  margin-left: 20px;
+}
+.kolona h2{
+  font-weight: 200;
+  font-size: 56px;
+  line-height: 70px;
+  letter-spacing: 0%;
+}
+.nadNaslov{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+
+.kartice{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 60px;
+}
+.kartica{
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  margin-right: 2%;
+  width: 490px;
+  height: 310px;
+  border-radius: 25px;
+  background: linear-gradient(30deg, #73D4FF 45%, #0088E5 75%);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.692));
+  transition: transform 200ms ease-in;
+}
+.kartica:hover{
+  transform: scale(1.08);
+}
+.broj{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  font-weight: 600;
+  font-size: 180px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0AADFF;
+  top: 25px;
+  left: 40px;
+}
+.kartica .content{
+  position: absolute;
+  width: calc(100% - 80px);
+  height: auto;
+  border-radius: 25px;
+  background-color: white;
+  bottom: 0;
+  padding: 40px;
+}
+.kartice h2{
+  font-size: 56px;
+  font-weight: 300;
+}
+.kartica .content p{
+  font-size: 26px;
+  font-weight: 500;
+}
+.kartica .content span{
+  font-size: 20px;
+  font-weight: 400;
+}
 
 
 @media (max-width: 760px) {
@@ -219,6 +319,7 @@ nav a:hover::after {
     transition: all 0.2s ease-in;
   }
 
+
   .hero{
     height: 800px;
   }
@@ -236,10 +337,9 @@ nav a:hover::after {
   }
   .recenzije{
     margin-top: 8px;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
   }
   .video{
-    margin-top: 60px;
     width: 97%;
     height: auto;
   }
@@ -255,6 +355,90 @@ nav a:hover::after {
     font-size: 14px;
     text-align: center;
   }
+
+
+  .info{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+  }
+  .kolona{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 45%;
+    min-width: 350px;
+    margin-bottom: 50px;
+  }
+  .stavka{
+    margin-top: 20px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .stavka p{
+    margin-left: 20px;
+  }
+  .kolona h2{
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 0%;
+    line-height: 1.2;
+  }
+  .nadNaslov{
+    font-size: 20px;
+  }
+
+
+
+  .kartica{
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 2%;
+    width: 490px;
+    height: 310px;
+    border-radius: 25px;
+    background: linear-gradient(30deg, #73D4FF 45%, #0088E5 75%);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.692));
+    transition: transform 200ms ease-in;
+  }
+  .kartica:hover{
+    transform: scale(1.08);
+  }
+  .broj{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-weight: 600;
+    font-size: 180px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #0AADFF;
+    top: 25px;
+    left: 40px;
+  }
+  .kartica .content{
+    width: calc(100% - 50px);
+    padding: 25px;
+  }
+  .kartice h2{
+    font-size: 56px;
+    font-weight: 300;
+  }
+  .kartica .content p{
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .kartica .content span{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
 }
 
 
