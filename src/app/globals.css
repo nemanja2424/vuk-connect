@@ -1,6 +1,9 @@
 *{
   font-family: 'Montserrat', sans-serif;
 }
+html, body{
+  margin: 0px;
+}
 a{
   text-decoration: none;
   transition: all 0.2s ease;
@@ -31,18 +34,16 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 4%;
+  padding: 0% 4%;
   padding-top: 10px;
-  width: calc(92%);
+  width: 92%;
+  position: relative;
+  z-index: 1000;
+  background-color: white;
 }
 header img{
   border-radius: 8%;
   cursor: pointer;
-}
-@media (max-width: 760px) {
-  header{
-    padding: 0px;
-  }
 }
 nav{
   display: flex;
@@ -73,6 +74,74 @@ nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.phoneNav{
+  display: none;
+}
 
+
+.forPh{
+  display: none;
+}
+
+
+
+
+@media (max-width: 760px) {
+  .forPC{
+    display: none;
+  }
+  .forPh{
+    display: block;
+  }
+  nav{
+    display: none;
+  }
+  .phoneNav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  .phoneNav a{
+    margin: 5px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+  }
+  .phoneNav a:hover{
+    color: #0AADFF;
+  }
+  .phoneNav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0AADFF;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+  }
+  .phoneNav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .phoneNav.open {
+    max-height: 300px;
+    padding: 10px 0;
+    transition: all 0.2s ease-in;
+  }
+}
 
 
