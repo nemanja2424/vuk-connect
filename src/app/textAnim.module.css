@@ -6,7 +6,3 @@
         opacity: 1;
     }
 }
-
-body p {
-    animation: fade-in 0.2s forwards;
-}
