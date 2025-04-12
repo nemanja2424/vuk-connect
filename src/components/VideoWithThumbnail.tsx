@@ -21,7 +21,7 @@ const VideoWithThumbnail = () => {
             height={505} 
           />
           <button className={style.playBtn} onClick={playVideo}>
-            <Image src={"/images/play.svg"} alt='play' width={88} height={88} />
+            <Image src={"/images/Play.svg"} alt='play' width={88} height={88} />
           </button>
         </div>
       ) : (
