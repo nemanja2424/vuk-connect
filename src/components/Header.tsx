@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div style={{ position:'fixed', top:'0', left:'0', zIndex:'1000', width:'100%' }}>
       <header>
         <Image src="/images/logo.png" alt="logo" width={50} height={50} />
         <nav>
@@ -53,46 +53,14 @@ const Header = () => {
       </header>
 
       <div className={`phoneNav ${telNavAnim ? "open" : ""}`}>
+        <div style={{ display:'flex', flexDirection:'column', alignItems:'center',  }}>
           <Link href="/">Features</Link>
           <Link href="/">About</Link>
           <Link href="/">FAQ</Link>
           <div style={{minHeight: '20px'}}></div>
           <Button1 />
+        </div>
       </div>
-
-
-      {/*{device && (
-        <header>
-          <Image src="/images/logo.png" alt="logo" width={50} height={50} />
-          <nav>
-            <Link href="/">Features</Link>
-            <Link href="/">About</Link>
-            <Link href="/">FAQ</Link>
-          </nav>
-          <div>
-            <Button1 />
-          </div>
-        </header>
-      )}
-
-      {device && (
-        <header>
-          <div>
-            <Image src="/images/logo.png" alt="logo" width={50} height={50} />
-          </div>
-          <div>
-            <div
-              className={`${style.navIcon3} ${navOpen ? style.open : ""}`}
-              onClick={toggleNav}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </header>
-      )}*/}
     </div>
   );
 };
