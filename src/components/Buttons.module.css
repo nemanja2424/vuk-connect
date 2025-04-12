@@ -26,8 +26,15 @@
 .button1:hover {
     background-position: right center;
 }
-
-
+.button2 {
+    background: linear-gradient(120deg, #0AADFF 6.25%, #0a7eb8 40.25%, #0088E5 50%, #123484 80.25%);
+    background-position: right center;
+    background-size: 200% 100%;
+    color: white;
+}
+.button2:hover {
+    background-position: left center;
+}
 
 
 @media (max-width: 760px){
