@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <div style={{ position:'fixed', top:'0', left:'0', zIndex:'1000', width:'100%' }}>
       <header>
-        <Image src="/images/logo.png" alt="logo" width={50} height={50} />
+        <Image src="/images/logo.webP" alt="logo" width={50} height={50} />
         <nav>
             <Link href="/">Features</Link>
             <Link href="/">About</Link>

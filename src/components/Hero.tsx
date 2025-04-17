@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className="BiR">
                     <Button2 />
                     <div className="recenzije">
-                        <Image src={"/images/Frame 154.png"} alt="memoji" width={180} height={40} />
+                        <Image src={"/images/Frame 154.webP"} alt="memoji" width={180} height={40} />
                         <div className="zvezdice">
                             <Image src={"/images/Frame 155.png"} alt="zvezdice" width={100} height={20} />
                             <p>Trusted by 100+ customers</p>
@@ -26,9 +26,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <VideoWithThumbnail />
-            </div>
+            <VideoWithThumbnail />
         </div>
     </div>
   );
