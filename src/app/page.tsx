@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Hero from "@/components/Hero";
 import Testemonials from "@/components/Testemonials";
+import FAQ from "@/components/FAQ";
 import Image from "next/image";
 
 export default function Home() {
@@ -153,6 +154,8 @@ export default function Home() {
       </p>
       <h2 style={{fontSize:'40px', textAlign:'center'}}>What they say about us</h2>
       <Testemonials />
+
+      <FAQ/>
     </div>
   );
 }
