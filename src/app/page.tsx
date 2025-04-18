@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Hero from "@/components/Hero";
+import Testemonials from "@/components/Testemonials";
 import Image from "next/image";
 
 export default function Home() {
@@ -75,7 +76,7 @@ export default function Home() {
           <span style={{color:'#0AADFF'}}>•</span>&nbsp;Challenges
         </p>
         <div style={{height:'10px',width:'100%'}}></div>
-        <h2 style={{textAlign:'center'}}>
+        <h2 style={{textAlign:'center', width:'100%'}}>
         Challenges Faced 
         by Insurance Providers
         </h2>
@@ -116,6 +117,42 @@ export default function Home() {
         </div>
         
       </div>
+
+      <div className="info2" style={{marginTop:'150px'  }}>
+        <div className="kolona2">
+          <p className="nadNaslov">
+            <span style={{color:'#0AADFF'}}>•</span>&nbsp;Lead Generation&nbsp;<span style={{color:'#0AADFF'}}>•</span>
+          </p>
+          <h2>Focus on your business while we handle lead generation</h2>
+          <div style={{minWidth:'100%', minHeight:'15px'}}></div>
+          <p>We focus exclusively on B2B companies. You will receive high-quality pre-qualified leads directly in your inbox. See faster results, allowing you to expand your client base effortlessly.</p>
+        </div>
+        <div className="kolona3">
+          <div className="stat">
+            <p>100+</p>
+            <h3>Leads generated</h3>
+          </div>
+          <div className="stat">
+            <p>100+</p>
+            <h3>Leads generated</h3>
+          </div>
+          <div className="stat">
+            <p>100+</p>
+            <h3>Leads generated</h3>
+          </div>
+          <div className="stat">
+            <p>100+</p>
+            <h3>Leads generated</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <p className="nadNaslov" style={{marginTop:'80px'}}>
+          <span style={{color:'#0AADFF'}}>•</span>&nbsp;Challenges
+      </p>
+      <h2 style={{fontSize:'40px', textAlign:'center'}}>What they say about us</h2>
+      <Testemonials />
     </div>
   );
 }
