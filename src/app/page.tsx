@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Hero from "@/components/Hero";
 import Testemonials from "@/components/Testemonials";
 import FAQ from "@/components/FAQ";
+import BookCall from "@/components/BookCall";
 import Image from "next/image";
 
 export default function Home() {
@@ -156,6 +157,8 @@ export default function Home() {
       <Testemonials />
 
       <FAQ/>
+
+      <BookCall />
     </div>
   );
 }
