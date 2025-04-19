@@ -133,11 +133,7 @@ nav a:hover::after {
     width: 70%;
   }
 }
-@media (max-width:760px){
-  .video-div{
-    width: 80%;
-  }
-}
+/*video div za max width 760px je na dnu*/
 .BiR{
   /*Button i Recenzije*/
   display: flex;
@@ -854,6 +850,12 @@ footer p {
     width: 350px;
     max-width: 90%;
     max-height: 90%;
+  }
+}
+
+@media (max-width:760px){
+  .video-div{
+    width: 80%;
   }
 }
 
