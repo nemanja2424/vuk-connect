@@ -4,7 +4,7 @@ import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-
 
 const Footer = () => {
     return(
-        <footer>
+        <footer >
             <div className="content">
                 <div className="logo">
                     <Image src="/images/logo.webP" alt="logo" width={54} height={54} style={{borderRadius:'8%'}} />
@@ -15,8 +15,7 @@ const Footer = () => {
                 <p><FontAwesomeIcon icon={faLocationDot} />&nbsp;&nbsp;Grove Street 21 st, Miami, USA</p>
             </div>
 
-            <div className="fBlur"></div>
-            <div className="fDec"></div>
+            <Image src="/images/Group 2.svg" alt="Vektori" width={1920} height={1080} className="fVektori"/>
         </footer>
     )
 }

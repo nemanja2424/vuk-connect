@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BookCall = () => {
   return (
-    <div className="book-call">
+    <div className="book-call fade-slide-in-left">
         <div className="content">
             <div style={{textAlign:'center', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'80%'}}>
                 <h2>Book Your Discovery Call</h2>

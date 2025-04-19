@@ -29,10 +29,10 @@ const FAQ = () => {
             <h2>Questions and Answers</h2>
 
             {faqData.map((faq, index) => (
-                <div className="faq-block" key={index}>
+                <div className="faq-block" key={index} style={{maxHeight:'24px'}}>
                     <div className="pitanje" onClick={() => handleOpen(index)}>
                         <p>{faq.question}</p>
-                        <FontAwesomeIcon icon={openIndex === index ? faMinus : faPlus} />
+                        <FontAwesomeIcon icon={openIndex === index ? faMinus : faPlus} style={{ maxHeight: '24px' }}/>
                     </div>
                     <div className={`odgovor ${openIndex === index ? 'open' : ''}`}>
                         <h3>{faq.answer}</h3>

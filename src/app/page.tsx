@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import styles from "./page.module.css";
 import Hero from "@/components/Hero";
 import Testemonials from "@/components/Testemonials";
@@ -6,6 +9,30 @@ import BookCall from "@/components/BookCall";
 import Image from "next/image";
 
 export default function Home() {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('hidden');
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target); // Kad se jednom pojavi, više ga ne posmatramo
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const elements = document.querySelectorAll('.fade-slide-in-up, .fade-slide-in-down, .fade-slide-in-left, .fade-slide-in-right, .fade-in');
+    
+    elements.forEach(el => {
+      el.classList.add('hidden'); // Sakrij sve na početku
+      observer.observe(el);
+    });
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <div className={styles.page}>
       <Hero />
@@ -73,7 +100,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="kartice">
+      <div className="kartice fade-slide-in-up">
         <p className="nadNaslov">
           <span style={{color:'#0AADFF'}}>•</span>&nbsp;Challenges
         </p>
@@ -120,7 +147,7 @@ export default function Home() {
         
       </div>
 
-      <div className="info2" style={{marginTop:'150px'  }}>
+      <div className="info2 fade-slide-in-up" style={{marginTop:'150px'  }}>
         <div className="kolona2">
           <p className="nadNaslov">
             <span style={{color:'#0AADFF'}}>•</span>&nbsp;Lead Generation&nbsp;<span style={{color:'#0AADFF'}}>•</span>

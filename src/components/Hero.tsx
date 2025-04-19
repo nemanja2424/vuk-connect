@@ -9,7 +9,7 @@ const Hero = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
-    <div className="hero">
+    <div className="hero fade-slide-in-left">
         <Image src={"/images/Group 2.svg"} alt="Vektori" width={1920} height={1080} className="vektori"/>
         <div className="content">
             <div>
