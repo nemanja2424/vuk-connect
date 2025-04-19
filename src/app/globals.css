@@ -611,7 +611,8 @@ footer p {
   z-index: -1;
   bottom: -50px;
   transform: translateY(20%);
-  border-radius: 45%;
+  border-radius: 45% 45% 0 0;
+
 }
 
 
