@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="content">
                 <div className="logo">
-                    <Image src="/images/logo.webp" alt="logo" width={54} height={54} style={{borderRadius:'8%'}} />
+                    <Image src="/images/logo.webP" alt="logo" width={54} height={54} style={{borderRadius:'8%'}} />
                     <p>VukConnect</p>
                 </div>
                 <p><FontAwesomeIcon icon={faPhone} />&nbsp;&nbsp;+21 324 433 231</p>
