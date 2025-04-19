@@ -557,6 +557,76 @@ nav a:hover::after {
 }
 
 
+
+
+footer {
+  position: relative;
+  min-height: 150px;
+  z-index: 100;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+footer .content {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer .logo p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.fDec {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    #03153E 0%,
+    #03153E 40%,
+    #0AADFF 65%,
+    rgba(115, 212, 255, 0.5) 80%,
+    rgba(115, 212, 255, 0) 100%
+  );
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130% 800px;
+  z-index: -1;
+  bottom: -50px;
+  transform: translateY(20%);
+  border-radius: 45%;
+}
+
+
+.fBlur {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(25px);
+  z-index: 1;
+}
+
+
+
 @media (max-width: 999px) {
   .forPC{
     display: none;
