@@ -619,7 +619,7 @@ footer p {
 .fBlur {
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(20px);
   z-index: 1;
 }
 
